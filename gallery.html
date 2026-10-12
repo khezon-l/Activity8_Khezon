@@ -1,23 +1,25 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khezon's Creatives - Gallery</title>
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-    html, body { 
-      overflow: hidden; 
-      width: 100%; 
-      height: 100vh; 
-      font-family: Arial, sans-serif; 
+
+    html, body {
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      font-family: Arial, sans-serif;
       background: url('79df9a705ca8cc2af87d75c179c04363.jpg') no-repeat center center fixed;
-      background-size: cover; 
-      text-align: center; 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-between; 
+      background-size: cover;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     header {
@@ -98,52 +100,94 @@
       max-width: 800px;
       height: 480px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 25px 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
-    .photo-row, 
-    .image-container {
-      height: 140px; 
-      display: flex;
-      align-items: center;
+    h1 {
+      text-transform: uppercase;
+      margin: 0 0 22px 0;
+      font-size: 20px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 75px);
       justify-content: center;
-      margin-bottom: 15px;
+      gap: 15px 25px;
+      margin: 0 auto;
+    }
+
+    .photo-grid img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      border: 4px solid #222222;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.08);
+    }
+
+    footer {
+      background: black;
+      color: white;
+      padding: 12px;
+      font-size: 12px;
       width: 100%;
     }
 
-    .image-container img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 5px solid #222;
-      object-fit: cover;
-    }
-    
-    h1 { text-transform: uppercase; margin: 0 0 6px 0; font-size: 20px; }
-    .tagline { color: #777; font-style: italic; margin: 0 0 10px 0; font-size: 13px; }
-    
-    .description { 
-      color: #555; 
-      line-height: 1.4; 
-      margin: 0 auto 8px; 
-      font-size: 12px; 
-      max-width: 650px; 
-      text-align: justify;
-    }
+    @media (max-width: 480px) {
+      html, body {
+        overflow: auto;
+        min-height: 100vh;
+        height: auto;
+      }
 
-    footer { 
-      background: black; 
-      color: white; 
-      padding: 12px; 
-      font-size: 12px; 
-      width: 100%; 
+      .content-card {
+        height: auto;
+        min-height: 420px;
+        padding: 25px 10px;
+        margin: 25px auto;
+      }
+
+      .photo-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px 8px;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .photo-grid img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-width: 3px;
+      }
+
+      .brand {
+        font-size: 19px;
+      }
+
+      nav {
+        gap: 5px;
+      }
+
+      nav a {
+        padding: 8px 10px;
+        font-size: 11px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -161,17 +205,29 @@
   </header>
 
   <div class="content-card">
-    <div class="image-container">
-      <img src="images.jpg" alt="Creator">
+    <h1>Photo Gallery</h1>
+
+    <div class="photo-grid">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
+      <img src="c6e6967ee5b41413aedf8032df3a002b.jpg" alt="Photo 2">
+      <img src="b6c9fd82b5634c0fb45c0adf560e8809.jpg" alt="Photo 1">
     </div>
-    <h1>About the Collection</h1>
-    <p class="tagline">Crafting Ideas Into Reality</p>
-    
-    <p class="description">At Khezon's Creatives, we envision a world where feline care seamlessly blends into the modern lifestyle. Our goal is to create a holistic ecosystem that respects a cat’s natural instincts while elevating contemporary home design, setting a new global standard for feline comfort, curiosity, and vitality.</p>
-    
-    <p class="description">Driven by discovery, we pioneer smart solutions that redefine daily cat care by merging cutting-edge technology with veterinary science. From intuitive nutrition systems to proactive health tools, we anticipate the needs of modern pet parents to make comprehensive wellness effortless and precise.</p>
-    
-    <p class="description">Innovation for us means replacing mass-market standards with sustainable, premium craftsmanship. We use eco-certified materials to build modular furniture and enrichment toys that complement sophisticated spaces, offering unparalleled style and longevity for discerning cat lovers.</p>
   </div>
 
   <footer>© 2026 Khezon's Creatives</footer>
