@@ -3,162 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Khezon's Creatives - About</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-    html, body { 
-      overflow: hidden; 
-      width: 100%; 
-      height: 100vh; 
-      font-family: Arial, sans-serif; 
-      background: url('79df9a705ca8cc2af87d75c179c04363.jpg') no-repeat center center fixed;
-      background-size: cover; 
-      text-align: center; 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-between; 
-    }
-
-    header {
-      background: #222;
-      color: white;
-      padding: 16px 20px 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .brand-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .header-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .brand {
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 24px;
-      letter-spacing: 2px;
-    }
-
-    nav {
-      margin-top: 10px;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      background: #3a3a3a;
-      padding: 8px 18px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: bold;
-      text-transform: uppercase;
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background: #4a4a4a;
-    }
-
-    nav a.active {
-      background: #444;
-      color: #FFD700;
-    }
-
-    nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 15%;
-      width: 70%;
-      height: 3px;
-      background-color: #FFD700;
-      border-radius: 2px;
-    }
-
-    .content-card {
-      background: white;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 800px;
-      height: 480px;
-      margin: 0 auto;
-      padding: 30px 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .photo-row, 
-    .image-container {
-      height: 140px; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
-      width: 100%;
-    }
-
-    .image-container img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      border: 5px solid #222;
-      object-fit: cover;
-    }
-    
-    h1 { text-transform: uppercase; margin: 0 0 6px 0; font-size: 20px; }
-    .tagline { color: #777; font-style: italic; margin: 0 0 12px 0; font-size: 13px; }
-    .description { color: #555; line-height: 1.5; margin: 0 auto; font-size: 12.5px; max-width: 650px; }
-
-    footer { 
-      background: black; 
-      color: white; 
-      padding: 12px; 
-      font-size: 12px; 
-      width: 100%; 
-    }
-  </style>
+  <title>Khezon's Midterm Portfolio - About</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="about-page">
 
   <header>
     <div class="brand-container">
-      <img src="Black White Minimalist Elegant Monogram Initial Logo.png" alt="Khezon's Creatives Logo" class="header-logo">
       <div class="brand">Khezon's Creatives</div>
     </div>
 
     <nav>
-      <a href="index.html">HOME</a>
-      <a href="about.html" class="active">ABOUT</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="contact.html">CONTACT</a>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="media.html">Media</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <div class="content-card">
     <div class="image-container">
-      <img src="images.jpg" alt="Creator">
+      <img src="Black White Minimalist Elegant Monogram Initial Logo.png" alt="Creator">
     </div>
-    <h1>About the Collection</h1>
-    <p class="tagline">Crafting Ideas Into Reality</p>
-    <p class="description">At Khezon's Creatives, we envision a world where feline care seamlessly blends into modern lifestyle and design. Our mission is to build a holistic ecosystem that respects a cat’s natural instincts while elevating home aesthetics. By pioneering smart solutions that merge cutting-edge technology with veterinary science, we replace mass-market standards with sustainable, premium craftsmanship—delivering modular furniture, proactive health tools, and enrichment products engineered for the ultimate comfort, curiosity, and vitality of discerning pets.</p>
+    <h1>About Me</h1>
+    <p class="description">My name is Khezon, and I am an IT student dedicated to mastering front-end web development principles. Below are my core focus areas:
+    <ul class="focus-areas"> 
+      <li>Semantic HTML structuring: Writing clean and accessible markup.</li>
+      <li>CSS Layout Optimization: Building centered layouts without frameworks.</li>
+      <li>WCAG & Usability Standards: Ensuring accessibility and proper contrast.</li>
+    </ul>
+      </a>
   </div>
 
   <footer>© 2026 Khezon's Creatives</footer>
